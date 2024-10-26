@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-TUBE</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="w-11/12 mx-auto">
+        <!-- Nav Part -->
+        <nav>
+            <div class="navbar py-3 border-b-[1px] flex">
+                <div class="navbar-start">
+                    <img src="assets/Logo.png" class="w-32">
+                </div>
+                <div class="navbar-center order-2 sm:order-1">
+                    <label class="input input-bordered flex items-center gap-2">
+                        <input type="text" class="grow hidden sm:block" id="search-bar" placeholder="Search" />
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                            class="h-4 w-4 opacity-70">
+                            <path fill-rule="evenodd"
+                                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </label>
+                </div>
+                <div class="navbar-end order-1">
+                    <a class="btn text-md font-semibold">SORT</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Buttons -->
+        <div id="category" class="py-5 flex justify-center gap-5">
+
+        </div>
+    </header>
+
+    <main class="w-11/12 mx-auto py-10">
+        <!-- All Videos -->
+        <section id="videos" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        </section>
+        <!-- Open the modal using ID.showModal() method -->
+        <button class="btn hidden" onclick="my_modal_1.showModal()" id="showMyModal">open modal</button>
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box" id="modal-box">
+            </div>
+        </dialog>
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
